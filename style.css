@@ -9,8 +9,10 @@ body,html{
 }
 /* font rules */
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,700');
 h1,h2,h3,h4,h5,p,li {
-	font-family: "Roboto", sans-serif;
+	font-family: "Oxygen", sans-serif;
+	font-weight: 300;
 }
 h1 {
 	font-size: 2.5rem;
@@ -40,20 +42,18 @@ a{
 .btn{
 	display: inline-block;
 	width: 105px;
-	background:rgba(135, 73, 1,0.3);
-	border:2px solid white;
-	border-radius: 5px;
-	box-shadow: 2px 2px 2px white;
+	background:#8e6248;
+	border:none;
 	color:white;
 	padding:10px 5px;
 	font-size:0.8rem;
 	margin:10px 5px;
 }
 .mobile-menu-wrapper{
-	border-top:1px solid brown;
+	border-top:1px solid rgba(135, 73, 1,0.3);
 	position: fixed;
 	bottom:0;
-	background:#fcf7f1;
+	background:#fffcf8;
 	width: 100%;
 	z-index: 10;
 }
@@ -80,6 +80,7 @@ a{
 	display: none;
 }
 .header-wrapper{
+	position: relative;
 	height: 100vh;
 	width: 100vw;
 	background:url("images/bridge.jpg")no-repeat center;
@@ -93,19 +94,28 @@ a{
 .menu{
 	display: flex;
 	justify-content: flex-end;
+	margin-top:20px;
 }
 .menu li{
 	color:#42f445;
 	margin: 10px;
 }
 .header-title{
-	width:60%;
-	margin:10% 15%;
+	width:80%;
+	position: absolute;
+    top: 20%;
+    left: 10%;
 }
-.header-title h1{
-	font-size:2.3rem;
-	color:#e5c094;
-	text-shadow: 1px 1px 3px  #6c5134;
+.header-title .name{
+	font-size:1.8rem;
+	letter-spacing: 2px;
+	font-weight: 500;
+	color:black;
+}
+.header-title .web-dev{
+	font-size: 1.1rem;
+	font-weight: 300;
+	color:#9e7620;
 }
 .about{
 	width: 80%;
@@ -251,44 +261,46 @@ a{
 	margin-top:25px;
 }
 .footer-input{
+	font-family: "Oxygen", sans-serif;
+	font-weight:300;
 	background: transparent;
 	border:none;
-	border-bottom: 2px solid brown;
-	color:brown;
+	border-bottom: 2px solid #8e6248;
+	color:black;
 	width: 100%;
 	margin-bottom: 20px;
 	font-size: 1rem;
 }
 input::-webkit-input-placeholder{
 	color: white !important;
-	font-family: "Roboto", sans-serif;
+	font-family: "Oxygen", sans-serif;
 	font-size: 1rem;
 	font-weight:300;
 }
  
 input:-moz-placeholder{
 	color: white !important;
-	font-family: "Roboto", sans-serif;
+	font-family: "Oxygen", sans-serif;
 	font-size: 1rem; 
 	font-weight:300; 
 }
  
 input::-moz-placeholder{  
 	color: white !important;
-	font-family: "Roboto", sans-serif; 
+	font-family: "Oxygen", sans-serif; 
 	font-size: 1rem; 
 	font-weight:300;
 }
  
 input:-ms-input-placeholder{  
 color: white !important;
-font-family: "Roboto", sans-serif; 
+font-family: "Oxygen", sans-serif; 
 font-size: 1rem; 
 font-weight:300;
 }
 input::placeholder{
 	color: white !important;
-font-family: "Roboto", sans-serif; 
+font-family: "Oxygen", sans-serif; 
 font-size: 1rem; 
 font-weight:300;
 }
@@ -303,7 +315,7 @@ font-weight:300;
 	display: block;
 	width: 100%;
 	background: transparent;
-	border: 2px solid brown;
+	border: 2px solid #8e6248;
 	color: white;
 	margin: 0 auto;
 	font-size: 1rem;
@@ -311,12 +323,12 @@ font-weight:300;
 	padding: 12px;
 }
 .skills{
-		margin: 0 auto;
-		width: 90%;
-		display: flex;
-		justify-content: space-around;
-		flex-wrap: wrap;
-	}
+	margin: 0 auto;
+	width: 90%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
 .skills-wrapper{
 	width: 100%;
 	margin:20px 0px;
@@ -334,12 +346,14 @@ font-weight:300;
 .skills-icons{
 	font-size: 4rem;
 	margin: 15px;
-	color:#f9b74d;
+	color:#f63a3a;/*#f9b74d*/
 }
 .signuture{
 	position: absolute;
 	bottom:5px;
 	left: 5px;
+}
+.signuture p{
 	font-size: 0.6rem;
 	font-weight: 700;
 }	
@@ -356,7 +370,13 @@ font-weight:300;
 	}
 	.header-title{
 		width: 60%;
-		margin: 30% 10%;
+		margin:0 10%;
+	}
+	.header-title .name{
+		font-size:2.5rem;
+	}
+	.header-title .web-dev{
+		font-size: 1.7rem;
 	}
 	.skills{
 		margin: 0 auto;
@@ -442,7 +462,9 @@ font-weight:300;
 	.signuture{
 	bottom:10px;
 	left: 10px;
-	font-size: 0.8rem;
+	}
+	.signuture p{
+	font-size: 0.6rem;
 	}	
 	
 	
@@ -482,8 +504,13 @@ font-weight:300;
 		flex-direction: row-reverse;
 	}
 	.header-title{
-	margin-top: 14%;
-	margin-left: 11%;
+	margin:0 8%;
+	}
+	.header-title .name{
+		font-size:2.8rem;
+	}
+	.header-title .web-dev{
+		font-size: 1.8rem;
 	}
 	
 	.project-responsive{
@@ -559,8 +586,11 @@ font-weight:300;
 	.signuture{
 	bottom:5px;
 	left: 5px;
+	}
+	.signuture p{
 	font-size: 0.6rem;
-}	
+	}	
+	
 }
 
 
