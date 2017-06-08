@@ -35,20 +35,7 @@ a{
 	float:right;
 }
 
-.buttons-wrapper{
-	display: flex;
-	justify-content:center;
-}
-.btn{
-	display: inline-block;
-	width: 105px;
-	background:#8e6248;
-	border:none;
-	color:white;
-	padding:10px 5px;
-	font-size:0.8rem;
-	margin:10px 5px;
-}
+
 .mobile-menu-wrapper{
 	border-top:1px solid rgba(135, 73, 1,0.3);
 	position: fixed;
@@ -121,6 +108,9 @@ a{
 	width: 80%;
 	margin: 10% auto;
 }
+.about h2{
+	text-align: center;
+}
 .my-image{
 	padding:10px;
 	width: 40%;
@@ -129,12 +119,41 @@ a{
 	border-radius:50px;
 	background: url("images/face.png")center/contain no-repeat;
 }
-.about-me{
+.about-text{
 	padding:20px;
+}
+.skills{
+	margin: 0 auto;
+	width: 90%;
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+.skills-wrapper{
+	height: 92vh;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.title{
+	font-size: 1.4rem;
+	font-weight: 700;
+	line-height: 4rem;
+}
+.skills-icons{
+	display: block;
+	font-size: 4rem;
+	margin: 15px;
+	color:#f63a3a;/*#f9b74d*/
 }
 .project-item{
 	width: 100%;
 	margin-bottom:30px;
+}
+.project-item h2{
+	text-align: center;
 }
 .project{
 	width: 100%;
@@ -236,6 +255,21 @@ a{
 .project4 .mobile-background{
 	background: url("images/best-buy-mobile.png")center/cover no-repeat ;
 }
+.buttons-wrapper{
+	display: flex;
+	justify-content:center;
+	margin-top:20px;
+}
+.btn{
+	display: inline-block;
+	width: 105px;
+	background:#8e6248;
+	border:none;
+	color:white;
+	padding:10px 5px;
+	font-size:0.8rem;
+	margin:10px 5px;
+}
 .footer-wrapper{
 	position: relative;
 	background:rgba(135, 73, 1,0.3);
@@ -249,6 +283,7 @@ a{
 .footer-wrapper h3{
 	line-height: 3rem;
 	letter-spacing: 3px;
+	font-weight: 800;
 }
 .footer-wrapper .icons-wrapper{
 	width: 100%;
@@ -322,32 +357,7 @@ font-weight:300;
 	font-weight:300;
 	padding: 12px;
 }
-.skills{
-	margin: 0 auto;
-	width: 90%;
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-}
-.skills-wrapper{
-	width: 100%;
-	margin:20px 0px;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-direction: column;
-}
-.skills-title{
-	font-size: 1.4rem;
-	font-weight: 700;
-	margin: 10px 0px;
-	line-height: 4rem;
-}
-.skills-icons{
-	font-size: 4rem;
-	margin: 15px;
-	color:#f63a3a;/*#f9b74d*/
-}
+
 .signuture{
 	position: absolute;
 	bottom:5px;
@@ -359,7 +369,7 @@ font-weight:300;
 }	
 
  /*TABLET STYLES*/
-@media screen and (min-width: 601px) and (max-width: 1050px){
+@media screen and (min-width: 600px) and (max-width: 1050px){
 	.menu-wrapper{
 		display: flex;
 		justify-content: flex-end;
@@ -386,11 +396,11 @@ font-weight:300;
 		flex-wrap: wrap;
 	}
 	.skills-wrapper{
-		margin:50px 0px;
+		height: 100vh;
 	}
-	.skills-title{
-		font-size: 1.5rem;
-		line-height: 6rem;
+	.title{
+	font-size: 2.0rem;
+	line-height:8rem;
 	}
 	.skills-icons{
 		font-size: 5rem;
@@ -441,7 +451,7 @@ font-weight:300;
 		height: 100vh;
 		display:flex;
 		justify-content: space-around;
-		align-items: center;
+		align-items:center;
 	}
 	.footer-wrapper h3{
 		font-weight: 800;
@@ -450,7 +460,7 @@ font-weight:300;
 		width: 40%;
 	}
 	.footer-text{
-		margin-bottom:40%;
+		margin-top:-25%;
 	}
 	.footer-text p {
 		font-size: 1.4rem;
@@ -481,15 +491,16 @@ font-weight:300;
 		display: none;
 	}
 	.skills-wrapper{
-		margin-bottom: 100px;
+		height: 100vh;
 	}
-	.skills-title{
-		font-size: 2rem;
-		line-height: 6rem;
-	}
+	.title{
+	font-size: 2.4rem;
+	line-height: 10rem;
+}
+
 	.skills-icons{
 		font-size: 6rem;
-		margin: 60px;
+		margin: 50px;
 	}	
 	.project{
 		align-items: center;
