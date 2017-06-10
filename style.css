@@ -112,7 +112,7 @@ a{
 	background-size: cover;
 }
 .header-wrapper a{
-	color:#af946a;
+	color:#b3a38a;
 	font-size: 1.2rem;
 }
 .header-wrapper a:hover {
@@ -205,6 +205,18 @@ a{
 .project-description{
 	width: 90%;
 	margin: 10px auto;
+}
+.project-description h4{
+	font-weight: 500;
+}
+.technologies-used{
+	display: flex;
+	justify-content: flex-start;
+}
+.technologies-used li{
+	margin:10px 10px 10px 0px ;
+	font-weight: 500;
+	color:#f9b74d;;
 }
 .project-responsive{
 	margin:10px auto;
