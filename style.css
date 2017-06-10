@@ -208,6 +208,7 @@ a{
 }
 .project-description h4{
 	font-weight: 500;
+	line-height: 3rem;
 }
 .technologies-used{
 	display: flex;
