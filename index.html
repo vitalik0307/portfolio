@@ -1,19 +1,18 @@
 <!DOCTYPE html>
 <html> 
     <head>
-    	 <title>Vitaliy Tkachuk Portfolio</title>
-    	 <meta name="viewport" content="width=device-width, initial-scale=1">
-    	 <link href='//cdn.jsdelivr.net/devicons/1.8.0/css/devicons.min.css' rel='stylesheet'>  	
+    	 <title>Vitaliy Tkachuk Portfolio | Web Developer</title>
+    	 <meta name="viewport" content="width=device-width, initial-scale=1"> 	
     </head>
     <body>
 		<header>
-			<div class="header-wrapper">
+			<div class="header-wrapper" title="Bridge Sunset">
 				<div class="menu-wrapper">
 					<ul class="menu">
-						<li><a href="">ABOUT</a></li>
-						<li><a href="">PORTFOLIO</a></li>
-						<li><a href="">SKILLS</a></li>
-						<li><a href="">CONTACT</a></li>
+						<li class="hvr-grow"><a id="about" class="menu-links" href="#aboutSection">ABOUT</a></li>
+						<li class="hvr-grow"><a id="skills" class="menu-links" href="#skillsSection">SKILLS</a></li>
+						<li class="hvr-grow"><a id="portfolio" class="menu-links" href="#portfolioSection">PORTFOLIO</a></li>
+						<li class="hvr-grow"><a id="contact" class="menu-links" href="#contactSection">CONTACT</a></li>
 					</ul>
 				</div>
 				<div class="header-title">
@@ -23,26 +22,34 @@
 					<ul class="mobile-menu">
 						<li>
 							<div class="menu-item">
+								<a id="about" href="#aboutSection">
 								<i class="fa fa-user fa-lg" aria-hidden="true"> </i>
 								<p>About</p>
+								</a>
 							</div>
 						</li>
 						<li>
 							<div class="menu-item">
-								<i class="fa fa-desktop fa-lg" aria-hidden="true"></i>
-								<p>Portfolio</p>
-							</div>	
-						</li>
-						<li>
-							<div class="menu-item">
+								<a id="skills" href="#skillsSection">
 								<i class="fa fa-wrench fa-lg" aria-hidden="true"></i>
 								<p>Skills</p>
+								</a>
 							</div>	
 						</li>
 						<li>
 							<div class="menu-item">
+								<a id="portfolio" href="#portfolioSection">
+								<i class="fa fa-desktop fa-lg" aria-hidden="true"></i>
+								<p>Portfolio</p>
+								</a>
+							</div>	
+						</li>
+						<li>
+							<div class="menu-item">
+								<a id="contact" href="#contactSection">
 								<i class="fa fa-phone fa-lg" aria-hidden="true"></i>
 								<p>Contact</p>
+								</a>
 							</div>	
 						</li>
 					</ul>
@@ -50,7 +57,7 @@
 			</div> <!-- end of header-wrapper -->
 		</header>
 
-		<section>
+		<section id="aboutSection">
 			<div class="about">
 				<h2><span class="title">ABOUT ME</span></h2>
 				<div class="my-image">
@@ -61,25 +68,25 @@
 			</div>
 		</section>
 
-		<section>
+		<section id="skillsSection">
 			<div class="skills-wrapper">
 				<h2><span class="title">MY TECHNICALL SKILLS</span></h2>
 				<div class="skills">
-					<span><i class="skills-icons devicons devicons-html5"></i></span>
-					<span><i class="skills-icons devicons devicons devicons-css3"></i></span>
-					<span><i class="skills-icons devicons devicons devicons-javascript"></i></span>
-					<span><i class="skills-icons devicons devicons devicons-jquery"></i></span>
-					<span><i class="skills-icons devicons devicons devicons-gulp"></i></span>
-					<span><i class="skills-icons devicons devicons devicons-github_badge"></i></span>
-					<span><i class="skills-icons devicons devicons devicons-sass"></i></span>
-					<span><i class="skills-icons devicons devicons devicons-terminal"></i></span>
-					<span><i class="skills-icons devicons devicons devicons-npm"></i></span>
-					<span><i class="skills-icons devicons devicons devicons-sublime"></i></span>
+					<span><i class="hvr-fade skills-icons devicons devicons-html5"></i></span>
+					<span><i class="hvr-fade skills-icons devicons devicons devicons-css3"></i></span>
+					<span><i class="hvr-fade skills-icons devicons devicons devicons-javascript"></i></span>
+					<span><i class="hvr-fade skills-icons devicons devicons devicons-jquery"></i></span>
+					<span><i class="hvr-fade skills-icons devicons devicons devicons-gulp"></i></span>
+					<span><i class="hvr-fade skills-icons devicons devicons devicons-github_badge"></i></span>
+					<span><i class="hvr-fade skills-icons devicons devicons devicons-sass"></i></span>
+					<span><i class="hvr-fade skills-icons devicons devicons devicons-terminal"></i></span>
+					<span><i class="hvr-fade skills-icons devicons devicons devicons-npm"></i></span>
+					<span><i class="hvr-fade skills-icons devicons devicons devicons-sublime"></i></span>
 				</div>
 			</div>
 		</section>
 
-		<section class="project-item">
+		<section id="portfolioSection" class="project-item">
 			<h2><span class="title">PORTFOILIO</span></h2>
 			<div class="project project1 row">
 				<div class="project-responsive">
@@ -100,10 +107,10 @@
 					</p>
 					<div class="buttons-wrapper">
 						<a href="https://vitalik0307.github.io/NY-Times-API-project/">
-							<button class="btn">View Live</button>
+							<button class="btn hvr-grow">View Live</button>
 						</a>
 						<a href="https://github.com/vitalik0307/NY-Times-API-project">
-							<button class="btn">View on github</button>
+							<button class="btn hvr-grow">View on github</button>
 						</a>
 					</div>
 				</div>
@@ -130,10 +137,10 @@
 					</p>
 					<div class="buttons-wrapper">
 						<a href="https://vitalik0307.github.io/ra-alohaproject01/">
-							<button class="btn">View Live</button>
+							<button class="btn hvr-grow">View Live</button>
 						</a>
 						<a href="https://github.com/vitalik0307/ra-alohaproject01">
-							<button class="btn">View on github</button>
+							<button class="btn hvr-grow">View on github</button>
 						</a>
 					</div>
 				</div>
@@ -161,10 +168,10 @@
 					</p>
 					<div class="buttons-wrapper">
 						<a href="https://vitalik0307.github.io/minimalES6-v01/">
-							<button class="btn">View Live</button>
+							<button class="btn hvr-grow">View Live</button>
 						</a>
 						<a href="https://github.com/vitalik0307/minimalES6-v01">
-							<button class="btn">View on github</button>
+							<button class="btn hvr-grow">View on github</button>
 						</a>
 					</div>
 				</div>
@@ -190,25 +197,25 @@
 					</p>
 					<div class="buttons-wrapper">
 						<a href="#">
-							<button class="btn">View Live</button>
+							<button class="btn hvr-grow">View Live</button>
 						</a>
 						<a href="#">
-							<button class="btn">View on github</button>
+							<button class="btn hvr-grow">View on github</button>
 						</a>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<footer>
+		<footer id="contactSection">
 			<div class="footer-wrapper">
 				<div class="footer-text">
 					<h3>CONTACT</h3>
 					<p>You can email me at<br> vitaliytkachuk777&#64;gmail.com <br>or simply fill up the form</p>
 					<div class="icons-wrapper">
-						<a href="twitter.com"><i class="fa fa-twitter fa-lg"></i></a>
-						<a href="https://github.com/vitalik0307"><i class="fa fa-github fa-lg"></i></a>
-						<a href="https://www.linkedin.com/in/vitaliy-tkachuk-32190b137/"><i class="fa fa-linkedin fa-lg"></i></a>
+						<a href="twitter.com"><i class="hvr-icon fa fa-twitter fa-lg"></i></a>
+						<a href="https://github.com/vitalik0307"><i class="hvr-icon fa fa-github fa-lg"></i></a>
+						<a href="https://www.linkedin.com/in/vitaliy-tkachuk-32190b137/"><i class="hvr-icon fa fa-linkedin fa-lg"></i></a>
 					</div>
 				</div>
 				<form action="mailto:vitaliytkachuk777@gmail.com">
@@ -216,7 +223,7 @@
 					<input class="footer-input" type="email" placeholder="Your email" name="email">
 					<input class="footer-input" type="text" placeholder="Subject" name="subject">
 					<textarea class="footer-message footer-input" placeholder="Your message" name="message"></textarea>
-					<button class="submit-btn" type="submit">SEND</button>
+					<button class="submit-btn hvr-grow" type="submit">SEND</button>
 				</form>
 				<div class="signuture">
 					<p>DEVELOPED BY VITALIY TKACHUK</p>
