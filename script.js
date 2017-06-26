@@ -1,27 +1,28 @@
 $(document).ready(function(){
-	setEventListener();
-});
 
-function setEventListener(){
-	var mobileMenuItem = $(".menu-item a");
 	var desctopMenuItem = $(".menu-links");
-	mobileMenuItem.click(function(e){
-		var sectionId = e.currentTarget.id;
-		// console.log("this is setion id: "+sectionId);
-	$("html body").animate({
-		scrollTop: $("#" + sectionId + "Section").offset().top
-	},1000);
-	
-
-	})
-
 	desctopMenuItem.click(function(e){
 		var sectionId = e.currentTarget.id + "Section";
-		console.log("this is setion id: "+sectionId);
-	
-	$("html body").animate({
+		$("html body").animate({
 		scrollTop: $("#" + sectionId).offset().top
-	},1000);
+		},1000);
+	});
+	
+	$('.hamburger').click(function() {
+    	$('#overlay').fadeIn(300);
+    	$('.menu-wrapper').removeClass('display-n');
+    });
+     
+    $('#close').click(function() {
+    	$('#overlay').fadeOut(300);
+    	$('.menu-wrapper').addClass("display-n");
+    });
 
-	})
-}
+    $('.menu-wrapper a').click(function() {
+    	$('#overlay').fadeOut(300);
+    	$('.menu-wrapper').addClass("display-n");
+    });
+	
+});
+
+

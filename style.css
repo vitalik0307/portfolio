@@ -2,16 +2,14 @@
   box-sizing: border-box;
 } 
 *body{
-	margin: 0;
+	margin:0;
 }
 body,html{
 	background: #fcf7f1;
 }
 /* font rules */
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
-@import url('https://fonts.googleapis.com/css?family=Oxygen:300,400,700');
 h1,h2,h3,h4,h5,p,li {
-	font-family: "Oxygen", sans-serif;
+	font-family:"Oxygen",sans-serif;
 	font-weight: 300;
 }
 h1 {
@@ -20,21 +18,41 @@ h1 {
 h2 {
 	font-size: 2rem;
 }
-h3 {font-size: 1.5rem;
+h3 {
+	font-size: 1.5rem;
 }
-h4 {font-size: 1.25rem;
+h4 {
+	font-size: 1.25rem;
 }
-h5 {font-size: 1rem;
+h5 {
+	font-size: 0.75rem;
 }
+
 a{
 	font-family: "raleway",sans-serif;
 	text-decoration: none;
 	color:white;
 }
-/*.right{
-	float:right;
-}*/
-.hvr-grow {
+.display-n{
+	display: none;
+}
+
+#overlay{
+	overflow-x: hidden;
+	background:#fcf7f1;
+	position: fixed;
+	top:0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	z-index: 99;
+	display: none;
+}
+.uppercase{
+	text-transform:uppercase;
+}
+
+.hvr-grow{
   display: inline-block;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
@@ -45,6 +63,7 @@ a{
   -webkit-transition-property: transform;
   transition-property: transform;
 }
+
 .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
@@ -72,42 +91,25 @@ a{
 	color:#8e6248;
 	cursor: pointer;
 }
-
-
-.mobile-menu-wrapper{
-	border-top:1px solid rgba(135, 73, 1,0.3);
-	position: fixed;
-	bottom:0;
-	background:#fffcf8;
-	width: 100%;
-	z-index: 10;
-}
-.mobile-menu{
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-}
-.menu-item{
-	display: flex;
-	flex-direction:column;
-	justify-content: center;
-	align-items: center;
-	padding: 5px;
-}
-.menu-item i{
-	padding: 4px;
-}
-
-.mobile-menu p{
-	font-size: 0.5rem;
-}
 .menu-wrapper{
-	display: none;
+	z-index: 100;
+	position: relative;
+}
+.hamburger{
+	margin: 20px;
+}
+.hamburger:hover{
+	cursor: pointer;
+}
+#close{
+	margin: 20px;
+}
+#close:hover{
+	cursor: pointer;
 }
 .header-wrapper{
-	position: relative;
 	height: 100vh;
-	width: 100vw;
+	width: 100%;
 	background:url("images/bridge.jpg")no-repeat center;
 	background-size: cover;
 }
@@ -120,12 +122,12 @@ a{
 }
 .menu{
 	display: flex;
-	justify-content: flex-end;
-	margin-top:20px;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
 }
 .menu li{
-	color:#42f445;
-	margin: 10px;
+	margin: 20px 10px;
 }
 .menu li:hover{
 	font-weight: 500;
@@ -156,11 +158,13 @@ a{
 }
 .my-image{
 	padding:10px;
-	width: 40%;
-	height: 35vh;
+	width:180px;
+	height:240px;
 	margin: 0 auto;
 	border-radius:50px;
-	background: url("images/face.png")center/contain no-repeat;
+}
+.my-image img{
+	width: 100%;
 }
 .about-text{
 	padding:20px;
@@ -171,6 +175,7 @@ a{
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
+	text-align: center;
 }
 .skills-wrapper{
 	height: 92vh;
@@ -180,11 +185,13 @@ a{
 	align-items: center;
 	flex-direction: column;
 }
-.title{
+section h2{
 	font-size: 1.4rem;
 	font-weight: 700;
 	line-height: 4rem;
+	text-transform: uppercase;
 }
+
 .skills-icons{
 	display: block;
 	font-size: 4rem;
@@ -215,7 +222,8 @@ a{
 	justify-content: flex-start;
 }
 .technologies-used li{
-	margin:10px 10px 10px 0px ;
+	font-size: 0.9rem;
+	margin:10px 9px 10px 0px ;
 	font-weight: 500;
 	color:#f9b74d;;
 }
@@ -254,6 +262,9 @@ a{
 	left:12.6%;
 	overflow: hidden;
 }
+.desctop-img img{
+	width: 100%;
+}
 .tablet-img{
 	height: 108px;
 	width: 82px;
@@ -262,6 +273,9 @@ a{
 	top:18.5%;
 	left:9%;
 	overflow: hidden;
+}
+.tablet-img img{
+	width: 100%;
 }
 .mobile-img{
 	height: 84px;
@@ -272,44 +286,8 @@ a{
 	left:27%;
 	overflow: hidden;
 }
-
-.project1 .desctop-background{
-	background: url("images/nyt-desctop.png")center/cover no-repeat ;
-}
-.project1 .tablet-background{
-	background: url("images/nyt-tablet.png")center/cover no-repeat ;
-}
-.project1 .mobile-background{
-	background: url("images/nyt-mobile.png")center/cover no-repeat ;
-}
-
-.project2 .desctop-background{
-	background: url("images/aloha-desktop.png")center/cover no-repeat ;
-}
-.project2 .tablet-background{
-	background: url("images/aloha-tablet.png")center/cover no-repeat ;
-}
-.project2 .mobile-background{
-	background: url("images/aloha-mobile.png")center/cover no-repeat ;
-}
-
-.project3 .desctop-background{
-	background: url("images/best-buy-desktop.png")center/cover no-repeat ;
-}
-.project3 .tablet-background{
-	background: url("images/best-buy-tablet.png")center/cover no-repeat ;
-}
-.project3 .mobile-background{
-	background: url("images/best-buy-mobile.png")center/cover no-repeat ;
-}
-.project4 .desctop-background{
-	background: url("images/best-buy-desktop.png")center/cover no-repeat ;
-}
-.project4 .tablet-background{
-	background: url("images/best-buy-tablet.png")center/cover no-repeat ;
-}
-.project4 .mobile-background{
-	background: url("images/best-buy-mobile.png")center/cover no-repeat ;
+.mobile-img img{
+	width: 100%;
 }
 .buttons-wrapper{
 	display: flex;
@@ -317,7 +295,7 @@ a{
 	margin-top:20px;
 }
 .btn{
-	display: inline-block;
+	text-align: center;
 	width: 105px;
 	background:#8e6248;
 	border:none;
@@ -326,114 +304,110 @@ a{
 	font-size:0.8rem;
 	margin:10px 5px;
 }
-.footer-wrapper{
-	position: relative;
+.contact-wrapper{
 	background:rgba(135, 73, 1,0.3);
+	min-height: 95vh;
 	width: 100%;
-	height: 94vh;
 	margin-top:50px;
-	margin-bottom:45px;
 	padding: 25px;
 	font-size: 1.1rem;
 }
-.footer-wrapper h3{
+.contact-wrapper h3{
 	line-height: 3rem;
 	letter-spacing: 3px;
 	font-weight: 800;
 }
-.footer-wrapper .icons-wrapper{
+.icons-wrapper{
 	width: 100%;
-	height: 10vh;
+	margin:20px 20px 20px 0;
 	display:flex;
 	justify-content: flex-start;
 }
-.icons-wrapper i{
-	margin-right:25px;
-	margin-top:25px;
+.icons-wrapper li{
+	margin-right: 20px;
 }
-.footer-input{
+.contact-input{
 	font-family: "Oxygen", sans-serif;
 	font-weight:300;
 	background: transparent;
-	border:none;
-	border-bottom: 2px solid #8e6248;
-	color:black;
-	width: 100%;
+	border:2px solid #8e6248;
+	color:black !important;
+	width: 95%;
 	margin-bottom: 20px;
 	font-size: 1rem;
 }
 input::-webkit-input-placeholder{
-	color: white !important;
+	color: black !important;
 	font-family: "Oxygen", sans-serif;
 	font-size: 1rem;
 	font-weight:300;
 }
  
 input:-moz-placeholder{
-	color: white !important;
+	color: black !important;
 	font-family: "Oxygen", sans-serif;
 	font-size: 1rem; 
 	font-weight:300; 
 }
  
 input::-moz-placeholder{  
-	color: white !important;
+	color: black !important;
 	font-family: "Oxygen", sans-serif; 
 	font-size: 1rem; 
 	font-weight:300;
 }
  
 input:-ms-input-placeholder{  
-color: white !important;
+color: black !important;
 font-family: "Oxygen", sans-serif; 
 font-size: 1rem; 
 font-weight:300;
 }
 input::placeholder{
-	color: white !important;
+	color: black !important;
 font-family: "Oxygen", sans-serif; 
 font-size: 1rem; 
 font-weight:300;
 }
 
-.footer-message{
+.contact-message{
 	display: block;
 	height: 20vh;
-	width: 100%;
+	width: 95%;
 
 }
 .submit-btn{
-	display: block;
-	width: 100%;
+	width: 95%;
 	background: transparent;
 	border: 2px solid #8e6248;
 	color: white;
-	margin: 0 auto;
 	font-size: 1rem;
 	font-weight:300;
 	padding: 12px;
 }
 
 .signuture{
-	position: absolute;
-	bottom:5px;
-	left: 5px;
+	background:rgba(135, 73, 1,0.3);
 }
-.signuture p{
-	font-size: 0.6rem;
-	font-weight: 700;
-}	
+.signuture h5{
+	margin: 2%;
+    display: inline-block;
+}
 
  /*TABLET STYLES*/
 @media screen and (min-width: 600px) and (max-width: 1050px){
+	i.hamburger{
+	display: none;
+	}
 	.menu-wrapper{
 		display: flex;
 		justify-content: flex-end;
 		margin-right: 2%;
 	}
-	.mobile-menu-wrapper{
-		display: none;
+	.menu{
+		flex-direction: row;
 	}
+	
 	.header-title{
 		width: 60%;
 		margin:0 10%;
@@ -444,6 +418,9 @@ font-weight:300;
 	.header-title .web-dev{
 		font-size: 1.7rem;
 	}
+	.about{
+		margin: 50px auto;
+	}
 	.skills{
 		margin: 0 auto;
 		width: 90%;
@@ -452,15 +429,16 @@ font-weight:300;
 		flex-wrap: wrap;
 	}
 	.skills-wrapper{
-		height: 100vh;
-	}
-	.title{
-	font-size: 2.0rem;
-	line-height:8rem;
+		margin: 150px auto;
+		height: auto;
+		max-width: 770px;
 	}
 	.skills-icons{
 		font-size: 5rem;
 		margin: 18px;
+	}
+	.project-item{
+		margin-bottom: 90px;
 	}	
 	.project-responsive{
 		width: 100%;
@@ -502,57 +480,58 @@ font-weight:300;
 	.project-description{
 		width: 80%;
 	}
-	.footer-wrapper{
+	.contact-wrapper{
 		margin:0;
 		height: 100vh;
 		display:flex;
 		justify-content: space-around;
 		align-items:center;
 	}
-	.footer-wrapper h3{
+	.contact-wrapper h3{
 		font-weight: 800;
 	}
-	.footer-wrapper form{
+	.contact-wrapper form{
 		width: 40%;
 	}
-	.footer-text{
-		margin-top:-25%;
+	.contact-text{
+		margin-top:-20%;
 	}
-	.footer-text p {
+	.contact-text p {
 		font-size: 1.4rem;
 		line-height: 2rem;
 	}
 	.icons-wrapper i{
 		font-size: 2em;
 	}
-	.signuture{
-	bottom:10px;
-	left: 10px;
-	}
-	.signuture p{
-	font-size: 0.6rem;
-	}	
+	
+	
 	
 	
 }
 
 /*DESCTOP STYLES*/
 @media screen and  (min-width: 1051px){
+	i.hamburger{
+		display: none;
+	}
 	.menu-wrapper{
 		display:flex;
 		justify-content: flex-end;
 		margin-right: 2%;
 	}
-	.mobile-menu-wrapper{
-		display: none;
+	.menu{
+		flex-direction: row;
 	}
+	.about-text{
+		max-width: 1300px;
+		margin: 0 auto;
+	}
+	
 	.skills-wrapper{
-		height: 100vh;
+		height:auto;
+		max-width: 1300px;
+		margin: 110px auto;
 	}
-	.title{
-	font-size: 2.4rem;
-	line-height: 10rem;
-}
 
 	.skills-icons{
 		font-size: 6rem;
@@ -581,12 +560,12 @@ font-weight:300;
 	}
 	
 	.project-responsive{
-		width: 65%;
-		margin: 0;
+		width: 750px;
+		margin: 25px;
 	}
 	.project-description{
-		width: 30%;
-		margin:0;
+		width: 25%;
+		margin:25px;
 		
 	}
 	.desctop{
@@ -627,36 +606,31 @@ font-weight:300;
     left:10.2%;
     overflow: hidden;
 	}
-	.footer-wrapper{
+	.contact-wrapper{
 		margin:0;
-		height: 100vh;
+		height: 96vh;
 		display:flex;
 		justify-content: space-around;
 		align-items: center;
 	}
-	.footer-wrapper h3{
+	.signuture h5{
+		margin: 1%;
+	}
+	.contact-wrapper h3{
 		font-weight: 800;
 	}
-	.footer-wrapper form{
+	.contact-wrapper form{
 		width: 37%;
 	}
-	.footer-text{
+	.contact-text{
 		margin-bottom:20%;
-	}
-	.footer-text p {
-		font-size: 1.4rem;
-		line-height: 2rem;
+		line-height: 1.7rem;
+    	letter-spacing: 1px;
 	}
 	.icons-wrapper i{
 		font-size: 2em;
 	}
-	.signuture{
-	bottom:5px;
-	left: 5px;
-	}
-	.signuture p{
-	font-size: 0.6rem;
-	}	
+		
 	
 }
 

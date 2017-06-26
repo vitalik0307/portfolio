@@ -7,60 +7,25 @@
     <body>
 		<header>
 			<div class="header-wrapper" title="Bridge Sunset">
-				<div class="menu-wrapper">
+				<i class="fa fa-bars fa-2x hamburger hvr-grow" aria-hidden="true"></i>
+				<div class="menu-wrapper display-n">
 					<ul class="menu">
-						<li class="hvr-grow"><a id="about" class="menu-links" href="#aboutSection">ABOUT</a></li>
-						<li class="hvr-grow"><a id="skills" class="menu-links" href="#skillsSection">SKILLS</a></li>
-						<li class="hvr-grow"><a id="portfolio" class="menu-links" href="#portfolioSection">PORTFOLIO</a></li>
-						<li class="hvr-grow"><a id="contact" class="menu-links" href="#contactSection">CONTACT</a></li>
+						<li class="hvr-grow"><a id="about" class="menu-links uppercase" href="#aboutSection">about</a></li>
+						<li class="hvr-grow"><a id="skills" class="menu-links uppercase" href="#skillsSection">skills</a></li>
+						<li class="hvr-grow"><a id="portfolio" class="menu-links uppercase" href="#portfolioSection">portfolio</a></li>
+						<li class="hvr-grow"><a id="contact" class="menu-links uppercase" href="#contactSection">contact</a></li>
 					</ul>
 				</div>
 				<div class="header-title">
-					<h1><span class="name">VITALIY TKACHUK</span><br><span class="web-dev"> FRONT-END DEVELOPER</span></h1>
+					<h1><span class="name uppercase">vitaliy tkachuk</span><br><span class="web-dev uppercase">front-end developer</span></h1>
 				</div>
-				<div class="mobile-menu-wrapper">
-					<ul class="mobile-menu">
-						<li>
-							<div class="menu-item">
-								<a id="about" href="#aboutSection">
-								<i class="fa fa-user fa-lg" aria-hidden="true"> </i>
-								<p>About</p>
-								</a>
-							</div>
-						</li>
-						<li>
-							<div class="menu-item">
-								<a id="skills" href="#skillsSection">
-								<i class="fa fa-wrench fa-lg" aria-hidden="true"></i>
-								<p>Skills</p>
-								</a>
-							</div>	
-						</li>
-						<li>
-							<div class="menu-item">
-								<a id="portfolio" href="#portfolioSection">
-								<i class="fa fa-desktop fa-lg" aria-hidden="true"></i>
-								<p>Portfolio</p>
-								</a>
-							</div>	
-						</li>
-						<li>
-							<div class="menu-item">
-								<a id="contact" href="#contactSection">
-								<i class="fa fa-phone fa-lg" aria-hidden="true"></i>
-								<p>Contact</p>
-								</a>
-							</div>	
-						</li>
-					</ul>
-				</div>
-			</div> <!-- end of header-wrapper -->
 		</header>
 
 		<section id="aboutSection">
 			<div class="about">
-				<h2><span class="title">ABOUT ME</span></h2>
+				<h2>about me</h2>
 				<div class="my-image">
+					<img src="images/face.png">
 				</div>
 				<div class="about-text">
 					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
@@ -70,33 +35,69 @@
 
 		<section id="skillsSection">
 			<div class="skills-wrapper">
-				<h2><span class="title">MY TECHNICALL SKILLS</span></h2>
-				<div class="skills">
-					<span><i class="hvr-fade skills-icons devicons devicons-html5"></i></span>
-					<span><i class="hvr-fade skills-icons devicons devicons devicons-css3"></i></span>
-					<span><i class="hvr-fade skills-icons devicons devicons devicons-javascript"></i></span>
-					<span><i class="hvr-fade skills-icons devicons devicons devicons-jquery"></i></span>
-					<span><i class="hvr-fade skills-icons devicons devicons devicons-gulp"></i></span>
-					<span><i class="hvr-fade skills-icons devicons devicons devicons-github_badge"></i></span>
-					<span><i class="hvr-fade skills-icons devicons devicons devicons-sass"></i></span>
-					<span><i class="hvr-fade skills-icons devicons devicons devicons-terminal"></i></span>
-					<span><i class="hvr-fade skills-icons devicons devicons devicons-npm"></i></span>
-					<span><i class="hvr-fade skills-icons devicons devicons devicons-sublime"></i></span>
-				</div>
+				<h2>my technikal skills</h2>
+				<ul class="skills">
+					<li>
+						<i class="hvr-fade skills-icons devicons devicons-html5"></i>
+						<h5>HTML 5</h5>
+					</li>
+					<li>
+						<i class="hvr-fade skills-icons devicons devicons devicons-css3"></i>
+						<h5>CSS 3</h5>
+					</li>
+					<li>
+						<i class="hvr-fade skills-icons devicons devicons devicons-javascript"></i>
+						<h5>JavaScript</h5>
+						</li>
+					<li>
+						<i class="hvr-fade skills-icons devicons devicons devicons-jquery"></i>
+						<h5>jQuery</h5>
+					</li>
+					<li>
+						<i class="hvr-fade skills-icons devicons devicons devicons-gulp"></i>
+						<h5>Gulp</h5>
+					</li>
+					<li>
+						<i class="hvr-fade skills-icons devicons devicons devicons-github_badge"></i>
+						<h5>GitHub</h5>
+					</li>
+					<li>
+						<i class="hvr-fade skills-icons devicons devicons devicons-sass"></i>
+						<h5>SASS</h5>
+					</li>
+					<li>
+						<i class="hvr-fade skills-icons devicons devicons devicons-terminal"></i>
+						<h5>Terminal</h5>
+					</li>
+					<li>
+						<i class="hvr-fade skills-icons devicons devicons devicons-npm"></i>
+						<h5>NPM</h5>
+					</li>
+					<li>
+						<i class="hvr-fade skills-icons devicons devicons devicons-sublime"></i>
+						<h5>Sublime</h5>
+					</li>
+				</ul>
 			</div>
 		</section>
 
 		<section id="portfolioSection" class="project-item">
-			<h2><span class="title">PORTFOILIO</span></h2>
-			<div class="project project1 row">
+			<h2>portfolio</h2>
+			<div class="project row">
 				<div class="project-responsive">
 					<div class="desctop">
-						<div class="desctop-img desctop-background"></div>
+						<div class="desctop-img">
+							<img alt="NYT-project-screenshot" src="images/nyt-desktop.png">
+						</div>
 						<div class="mobile">
-							<div class="mobile-img mobile-background"></div>
+							<div class="mobile-img">
+								<img alt="NYT-project-screenshot" src="images/nyt-mobile.png">
+							</div>
 						</div>
 						<div class="tablet">
-							<div class="tablet-img tablet-background"></div>
+							<div class="tablet-img">
+								<img alt="NYT-project-screenshot" src="images/nyt-tablet.png">
+							</div>
 						</div>
 					</div>
 				</div>
@@ -104,20 +105,20 @@
 				<div class="project-description">
 					<h4>New York Times Top Stories</h4>
 					<p>
-						An app called New York Times Top Stories, which relied on knowledge of AJAX calls and use of API’s. This app is pulling data from NY Times API and displays it on the page. You also have an option to separete stories by categories.
+						An app called New York Times Top Stories, which relied on knowledge of AJAX calls and use of API’s. This app is pulling data from NY Times API and displays it on the page. User also has an option to separete stories by categories.
 					</p>
 					<ul class="technologies-used">
-						<li>HTML 5</li>
-						<li>CSS 3</li>
+						<li class="uppercase">html 5</li>
+						<li class="uppercase">css 3</li>
 						<li>JavaScript</li>
-						<li>API</li>
+						<li class="uppercase">api</li>
 					</ul>
 					<div class="buttons-wrapper">
-						<a href="https://vitalik0307.github.io/NY-Times-API-project/">
-							<button class="btn hvr-grow">View Live</button>
+						<a class="btn hvr-grow" href="https://vitalik0307.github.io/NY-Times-API-project/">
+							View Live
 						</a>
-						<a href="https://github.com/vitalik0307/NY-Times-API-project">
-							<button class="btn hvr-grow">View on github</button>
+						<a class="btn hvr-grow" href="https://github.com/vitalik0307/NY-Times-API-project">
+							View on github
 						</a>
 					</div>
 				</div>
@@ -126,15 +127,21 @@
 		</section>
 
 		<section class="project-item">
-			<div class="project project2 row-reverse">
+			<div class="project row-reverse">
 				<div class="project-responsive">
 					<div class="desctop">
-						<div class="desctop-img desctop-background"></div>
+						<div class="desctop-img">
+							<img alt="Aloha-project-screenshot" src="images/aloha-desktop.png">
+						</div>
 						<div class="mobile">
-							<div class="mobile-img mobile-background"></div>
+							<div class="mobile-img">
+								<img alt="Aloha-project-screenshot" src="images/aloha-mobile.png">
+							</div>
 						</div>
 						<div class="tablet">
-							<div class="tablet-img tablet-background"></div>
+							<div class="tablet-img">
+								<img alt="Aloha-project-screenshot" src="images/aloha-tablet.png">
+							</div>
 						</div>
 					</div>
 				</div>
@@ -149,11 +156,11 @@
 						<li>Responsive Design</li>
 					</ul>
 					<div class="buttons-wrapper">
-						<a href="https://vitalik0307.github.io/ra-alohaproject01/">
-							<button class="btn hvr-grow">View Live</button>
+						<a class="btn hvr-grow" href="https://vitalik0307.github.io/ra-alohaproject01/">
+							View Live
 						</a>
-						<a href="https://github.com/vitalik0307/ra-alohaproject01">
-							<button class="btn hvr-grow">View on github</button>
+						<a class="btn hvr-grow" href="https://github.com/vitalik0307/ra-alohaproject01">
+							View on github
 						</a>
 					</div>
 				</div>
@@ -161,15 +168,21 @@
 		</section>
 
 		<section class="project-item">
-			<div class="project project3 row">
+			<div class="project row">
 				<div class="project-responsive">
 					<div class="desctop">
-						<div class="desctop-img desctop-background"></div>
+						<div class="desctop-img">
+							<img alt="Best-buy-project-screnshot" src="images/best-buy-desktop.png">
+						</div>
 						<div class="mobile">
-							<div class="mobile-img mobile-background"></div>
+							<div class="mobile-img">
+								<img alt="Best-buy-project-screnshot" src="images/best-buy-mobile.png">
+							</div>
 						</div>
 						<div class="tablet">
-							<div class="tablet-img tablet-background"></div>
+							<div class="tablet-img">
+								<img alt="Best-buy-project-screnshot" src="images/best-buy-tablet.png">
+							</div>
 						</div>
 					</div>
 					
@@ -182,19 +195,19 @@
 						before adding it.
 					</p>
 					<ul class="technologies-used">
-						<li>HTML 5</li>
-						<li>CSS 3</li>
+						<li class="uppercase">html 5</li>
+						<li class="uppercase">css 3</li>
 						<li>JavaScript</li>
-						<li>API</li>
+						<li class="uppercase">api</li>
 						<li>Sass</li>
 						<li>Gulp</li>
 					</ul>
 					<div class="buttons-wrapper">
-						<a href="https://vitalik0307.github.io/minimalES6-v01/">
-							<button class="btn hvr-grow">View Live</button>
+						<a class="btn hvr-grow" href="https://vitalik0307.github.io/minimalES6-v01/">
+							View Live
 						</a>
-						<a href="https://github.com/vitalik0307/minimalES6-v01">
-							<button class="btn hvr-grow">View on github</button>
+						<a class="btn hvr-grow" href="https://github.com/vitalik0307/minimalES6-v01">
+							View on github
 						</a>
 					</div>
 				</div>
@@ -202,15 +215,21 @@
 		</section>
 
 		<section class="project-item">
-			<div class="project project4 row-reverse">
+			<div class="project row-reverse">
 				<div class="project-responsive">
 					<div class="desctop">
-						<div class="desctop-img desctop-background"></div>
+						<div class="desctop-img">
+							<img alt="NYT-project-screenshot" src="images/nyt-desktop.png">
+						</div>
 						<div class="mobile">
-							<div class="mobile-img mobile-background"></div>
+							<div class="mobile-img">
+								<img alt="NYT-project-screenshot" src="images/nyt-mobile.png">
+							</div>
 						</div>
 						<div class="tablet">
-							<div class="tablet-img tablet-background"></div>
+							<div class="tablet-img">
+								<img alt="NYT-project-screenshot" src="images/nyt-tablet.png">
+							</div>
 						</div>
 					</div>
 				</div>
@@ -220,50 +239,55 @@
 						Fully responsive multi-page theme.
 					</p>
 					<ul class="technologies-used">
-						<li>HTML 5</li>
-						<li>CSS 3</li>
-						<li>PHP</li>
+						<li class="uppercase">html 5</li>
+						<li class="uppercase">css 3</li>
+						<li class="uppercase">php</li>
 						<li>Sass</li>
 						<li>Gulp</li>
 					</ul>
 					<div class="buttons-wrapper">
-						<a href="#">
-							<button class="btn hvr-grow">View Live</button>
+						<a class="btn hvr-grow" href="#">
+							View Live
 						</a>
-						<a href="#">
-							<button class="btn hvr-grow">View on github</button>
+						<a class="btn hvr-grow" href="#">
+							View on github
 						</a>
 					</div>
 				</div>
 			</div>
 		</section>
 
-		<footer id="contactSection">
-			<div class="footer-wrapper">
-				<div class="footer-text">
-					<h3>CONTACT</h3>
+		<section id="contactSection">
+			<div class="contact-wrapper">
+				<div class="contact-text">
+					<h3 class="uppercase">contact</h3>
 					<p>You can email me at<br> vitaliytkachuk777&#64;gmail.com <br>or simply fill up the form</p>
-					<div class="icons-wrapper">
-						<a href="twitter.com"><i class="hvr-icon fa fa-twitter fa-lg"></i></a>
-						<a href="https://github.com/vitalik0307"><i class="hvr-icon fa fa-github fa-lg"></i></a>
-						<a href="https://www.linkedin.com/in/vitaliy-tkachuk-32190b137/"><i class="hvr-icon fa fa-linkedin fa-lg"></i></a>
-					</div>
+					<ul class="icons-wrapper">
+						<li><a href="twitter.com"><i class="hvr-icon fa fa-twitter fa-lg"></i></a></li>
+						<li><a href="https://github.com/vitalik0307"><i class="hvr-icon fa fa-github fa-lg"></i></a></li>
+						<li><a href="https://www.linkedin.com/in/vitaliy-tkachuk-32190b137/"><i class="hvr-icon fa fa-linkedin fa-lg"></i></a></li>
+					</ul>
 				</div>
 				<form action="mailto:vitaliytkachuk777@gmail.com">
-					<input class="footer-input" type="text" placeholder="Your name" name="name">
-					<input class="footer-input" type="email" placeholder="Your email" name="email">
-					<input class="footer-input" type="text" placeholder="Subject" name="subject">
-					<textarea class="footer-message footer-input" placeholder="Your message" name="message"></textarea>
-					<button class="submit-btn hvr-grow" type="submit">SEND</button>
+					<input class="contact-input" type="text" placeholder="Your name" name="name">
+					<input class="contact-input" type="email" placeholder="Your email" name="email">
+					<input class="contact-input" type="text" placeholder="Subject" name="subject">
+					<textarea class="contact-message contact-input" placeholder="Your message" name="message"></textarea>
+					<button class="submit-btn hvr-grow uppercase" type="submit">send</button>
 				</form>
-				<div class="signuture">
-					<p>DEVELOPED BY VITALIY TKACHUK</p>
-				</div>
-
 			</div>	
+		</section>
+		<footer>
+			<div class="signuture">
+				<h5><span class="uppercase">developed by vitaliy tkachuk</span></h5>
+			</div>
+			<div id="overlay">
+				<i id="close" class="fa fa-times fa-lg hvr-grow" aria-hidden="true"></i>
+			</div>
 		</footer>
 		<link rel="stylesheet" type="text/css" href="reset.css">	
     	<link rel="stylesheet" type="text/css" href="style.css">
+    	<link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700" rel="stylesheet">
     	<link rel="stylesheet" type="text/css" href="devicons.css">
     	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
