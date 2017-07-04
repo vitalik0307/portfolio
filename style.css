@@ -168,6 +168,7 @@ a{
 }
 .about-text{
 	padding:20px;
+	text-align: center;
 }
 .skills{
 	margin: 0 auto;
@@ -316,6 +317,7 @@ section h2{
 	line-height: 3rem;
 	letter-spacing: 3px;
 	font-weight: 800;
+	color: black;
 }
 .icons-wrapper{
 	width: 100%;
@@ -331,50 +333,44 @@ section h2{
 	font-weight:300;
 	background: transparent;
 	border:2px solid #8e6248;
-	color:black !important;
 	width: 95%;
 	margin-bottom: 20px;
 	font-size: 1rem;
+	color:black;
 }
-input::-webkit-input-placeholder{
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
 	color: black !important;
 	font-family: "Oxygen", sans-serif;
 	font-size: 1rem;
 	font-weight:300;
-}
- 
-input:-moz-placeholder{
-	color: black !important;
-	font-family: "Oxygen", sans-serif;
-	font-size: 1rem; 
-	font-weight:300; 
-}
- 
-input::-moz-placeholder{  
+	padding: 5px;
+} 
+input::-moz-placeholder, textarea::-moz-placeholder{  
 	color: black !important;
 	font-family: "Oxygen", sans-serif; 
 	font-size: 1rem; 
 	font-weight:300;
+	padding: 5px;
 }
- 
-input:-ms-input-placeholder{  
-color: black !important;
-font-family: "Oxygen", sans-serif; 
-font-size: 1rem; 
-font-weight:300;
-}
-input::placeholder{
+input:-ms-input-placeholder, textarea:-ms-input-placeholder{  
 	color: black !important;
-font-family: "Oxygen", sans-serif; 
-font-size: 1rem; 
-font-weight:300;
+	font-family: "Oxygen", sans-serif; 
+	font-size: 1rem; 
+	font-weight:300;
+	padding: 5px;
+}
+input::placeholder, textarea::placeholder{
+	color: black !important;
+	font-family: "Oxygen", sans-serif; 
+	font-size: 1rem; 
+	font-weight:300;
+	padding: 5px;
 }
 
 .contact-message{
 	display: block;
 	height: 20vh;
 	width: 95%;
-
 }
 .submit-btn{
 	width: 95%;
@@ -523,7 +519,7 @@ font-weight:300;
 		flex-direction: row;
 	}
 	.about-text{
-		max-width: 1300px;
+		max-width: 800px;
 		margin: 0 auto;
 	}
 	
@@ -532,10 +528,12 @@ font-weight:300;
 		max-width: 1300px;
 		margin: 110px auto;
 	}
-
 	.skills-icons{
 		font-size: 6rem;
-		margin: 50px;
+		margin: 20px 50px;
+	}
+	.skills-icons h5{
+		margin-bottom: 20px;
 	}	
 	.project{
 		align-items: center;
