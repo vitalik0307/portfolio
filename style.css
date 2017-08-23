@@ -1,6 +1,7 @@
+
 *, *:before, *:after {
   box-sizing: border-box;
-} 
+}
 *body{
 	margin:0;
 }
@@ -344,25 +345,25 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder{
 	font-size: 1rem;
 	font-weight:300;
 	padding: 5px;
-} 
-input::-moz-placeholder, textarea::-moz-placeholder{  
+}
+input::-moz-placeholder, textarea::-moz-placeholder{
 	color: black !important;
-	font-family: "Oxygen", sans-serif; 
-	font-size: 1rem; 
+	font-family: "Oxygen", sans-serif;
+	font-size: 1rem;
 	font-weight:300;
 	padding: 5px;
 }
-input:-ms-input-placeholder, textarea:-ms-input-placeholder{  
+input:-ms-input-placeholder, textarea:-ms-input-placeholder{
 	color: black !important;
-	font-family: "Oxygen", sans-serif; 
-	font-size: 1rem; 
+	font-family: "Oxygen", sans-serif;
+	font-size: 1rem;
 	font-weight:300;
 	padding: 5px;
 }
 input::placeholder, textarea::placeholder{
 	color: black !important;
-	font-family: "Oxygen", sans-serif; 
-	font-size: 1rem; 
+	font-family: "Oxygen", sans-serif;
+	font-size: 1rem;
 	font-weight:300;
 	padding: 5px;
 }
@@ -403,7 +404,7 @@ input::placeholder, textarea::placeholder{
 	.menu{
 		flex-direction: row;
 	}
-	
+
 	.header-title{
 		width: 60%;
 		margin:0 10%;
@@ -435,7 +436,7 @@ input::placeholder, textarea::placeholder{
 	}
 	.project-item{
 		margin-bottom: 90px;
-	}	
+	}
 	.project-responsive{
 		width: 100%;
 	}
@@ -499,10 +500,10 @@ input::placeholder, textarea::placeholder{
 	.icons-wrapper i{
 		font-size: 2em;
 	}
-	
-	
-	
-	
+
+
+
+
 }
 
 /*DESCTOP STYLES*/
@@ -522,7 +523,7 @@ input::placeholder, textarea::placeholder{
 		max-width: 800px;
 		margin: 0 auto;
 	}
-	
+
 	.skills-wrapper{
 		height:auto;
 		max-width: 1300px;
@@ -534,7 +535,7 @@ input::placeholder, textarea::placeholder{
 	}
 	.skills-icons h5{
 		margin-bottom: 20px;
-	}	
+	}
 	.project{
 		align-items: center;
 		justify-content: center;
@@ -556,7 +557,7 @@ input::placeholder, textarea::placeholder{
 	.header-title .web-dev{
 		font-size: 1.8rem;
 	}
-	
+
 	.project-responsive{
 		width: 750px;
 		margin: 25px;
@@ -564,7 +565,7 @@ input::placeholder, textarea::placeholder{
 	.project-description{
 		width: 25%;
 		margin:25px;
-		
+
 	}
 	.desctop{
 		width: 750px;
@@ -585,7 +586,7 @@ input::placeholder, textarea::placeholder{
 		height: 252px;
 	    width: 187px;
 	    top: 18%;
-	    left: 6%; 
+	    left: 6%;
 	}
 	.mobile {
     width: 126px;
@@ -628,23 +629,4 @@ input::placeholder, textarea::placeholder{
 	.icons-wrapper i{
 		font-size: 2em;
 	}
-		
-	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
